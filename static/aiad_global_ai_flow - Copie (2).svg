@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" font-family="Inter, Helvetica, Arial, sans-serif" role="img" aria-label="AIAD Global AI Flow diagram">
+  <title>AIAD — AI Assisted Development — Global AI Flow</title>
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+
+    <!-- arrowheads -->
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0891b2"/>
+    </marker>
+    <marker id="arrowRose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/>
+    </marker>
+  </defs>
+
+  <!-- white canvas -->
+  <rect x="0" y="0" width="1800" height="900" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="70" y="80" fill="#0f172a" font-size="44" font-weight="700" letter-spacing="-0.5">AIAD — AI Assisted Development</text>
+  <text x="70" y="115" fill="#64748b" font-size="18" font-weight="500">Architecture · AI Engine · Knowledge</text>
+
+  <!-- ============ pastel column washes ============ -->
+  <!-- Knowledge Base — soft indigo -->
+  <rect x="50"   y="180" width="400" height="690" rx="28" ry="28" fill="#eef2ff"/>
+  <!-- Features (AI Engine) — soft amber -->
+  <rect x="540"  y="180" width="400" height="690" rx="28" ry="28" fill="#fef3c7"/>
+  <!-- Generated Outputs — soft mint -->
+  <rect x="1030" y="180" width="400" height="690" rx="28" ry="28" fill="#d1fae5"/>
+  <!-- Reinjection — soft rose -->
+  <rect x="1420" y="180" width="380" height="690" rx="28" ry="28" fill="#ffe4e6"/>
+
+  <!-- column labels -->
+  <text x="70"   y="160" fill="#4338ca" font-size="16" font-weight="700" letter-spacing="3">KNOWLEDGE BASE</text>
+  <text x="560"  y="160" fill="#b45309" font-size="16" font-weight="700" letter-spacing="3">AI ENGINE  ·  FEATURES (PER STREAM)</text>
+  <text x="1050" y="160" fill="#047857" font-size="16" font-weight="700" letter-spacing="3">GENERATED OUTPUTS</text>
+  <text x="1440" y="160" fill="#be123c" font-size="16" font-weight="700" letter-spacing="3">REINJECTION</text>
+
+  <!-- ============ animated edges (drawn before cards) ============ -->
+  <!-- e1: src1 -> ai1 -->
+  <path d="M390,265 L600,265" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <!-- e3: src2 -> ai2 -->
+  <path d="M390,435 L600,435" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <!-- e4: src3 right -> ai2 bottom (enters at 25% from left) -->
+  <path d="M390,605 L670,605 L670,485" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.1s" repeatCount="indefinite"/>
+  </path>
+  <!-- e5: src4 right -> ai2 bottom (enters at ~46% from left) -->
+  <path d="M390,775 L728,775 L728,485" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.3s" repeatCount="indefinite"/>
+  </path>
+  <!-- e6: ai1 -> out1 -->
+  <path d="M880,265 L1090,265" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="10 6" marker-end="url(#arrowEmerald)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <!-- e7: ai2 -> out2 -->
+  <path d="M880,435 L1090,435" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="10 6" marker-end="url(#arrowEmerald)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <!-- e8: out2 -> out3 -->
+  <path d="M1370,435 L1470,435" fill="none" stroke="#0891b2" stroke-width="3" stroke-dasharray="10 6" marker-end="url(#arrowCyan)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+  <!-- dashed feedback: out2 top -> out1 bottom -->
+  <path d="M1230,385 L1230,315" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrowEmerald)">
+    <animate attributeName="stroke-dashoffset" from="11" to="0" dur="0.7s" repeatCount="indefinite"/>
+  </path>
+  <!-- out1 -> out4 (reinjection) -->
+  <path d="M1370,265 L1470,265" fill="none" stroke="#e11d48" stroke-width="3" stroke-dasharray="10 6" marker-end="url(#arrowRose)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ============ white cards (uniform 280 x 95) ============ -->
+
+  <!-- src1: Business specs -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="220" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+  </g>
+  <circle cx="135" cy="252" r="6" fill="#6366f1"/>
+  <text x="155" y="258" fill="#0f172a" font-size="20" font-weight="700">Business specs</text>
+  <text x="135" y="290" fill="#64748b" font-size="15">business-specs.md</text>
+
+  <!-- src2: Global Architecture specification -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="390" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+  </g>
+  <circle cx="135" cy="422" r="6" fill="#8b5cf6"/>
+  <text x="155" y="428" fill="#0f172a" font-size="19" font-weight="700">Architecture specification</text>
+  <text x="135" y="460" fill="#64748b" font-size="15">architecture.md + PUML</text>
+
+  <!-- src3: Coding norms -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="560" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+  </g>
+  <circle cx="135" cy="592" r="6" fill="#14b8a6"/>
+  <text x="155" y="598" fill="#0f172a" font-size="20" font-weight="700">Coding norms</text>
+  <text x="135" y="630" fill="#64748b" font-size="15">Best practice • style</text>
+
+  <!-- src4: Integration tests definition -->
+  <g filter="url(#cardShadow)">
+    <rect x="110" y="730" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.5"/>
+  </g>
+  <circle cx="135" cy="762" r="6" fill="#0ea5e9"/>
+  <text x="155" y="768" fill="#0f172a" font-size="20" font-weight="700">Integration tests def</text>
+  <text x="135" y="800" fill="#64748b" font-size="15">structured .md files</text>
+
+  <!-- ai1: Business Feature -->
+  <g filter="url(#cardShadow)">
+    <rect x="600" y="220" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+  </g>
+  <circle cx="625" cy="252" r="6" fill="#f59e0b"/>
+  <text x="645" y="258" fill="#0f172a" font-size="20" font-weight="700">Business Feature</text>
+  <text x="625" y="290" fill="#64748b" font-size="15">FXYZ-description.md</text>
+
+  <!-- ai2: Integration tests -->
+  <g filter="url(#cardShadow)">
+    <rect x="600" y="390" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+  </g>
+  <circle cx="625" cy="422" r="6" fill="#d946ef"/>
+  <text x="645" y="428" fill="#0f172a" font-size="20" font-weight="700">Integration tests</text>
+  <text x="625" y="460" fill="#64748b" font-size="15">FXYZ.integration.md</text>
+
+  <!-- out1: Artefacts -->
+  <g filter="url(#cardShadow)">
+    <rect x="1090" y="220" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  </g>
+  <circle cx="1115" cy="252" r="6" fill="#10b981"/>
+  <text x="1135" y="258" fill="#0f172a" font-size="20" font-weight="700">Artefacts</text>
+  <text x="1115" y="290" fill="#64748b" font-size="15">Code API • Web UI</text>
+
+  <!-- out2: Integration tests (executable) -->
+  <g filter="url(#cardShadow)">
+    <rect x="1090" y="390" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  </g>
+  <circle cx="1115" cy="422" r="6" fill="#10b981"/>
+  <text x="1135" y="428" fill="#0f172a" font-size="20" font-weight="700">Integration tests</text>
+  <text x="1115" y="460" fill="#64748b" font-size="15">Executable IT</text>
+
+  <!-- out3: Proof of execution -->
+  <g filter="url(#cardShadow)">
+    <rect x="1470" y="390" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#fecdd3" stroke-width="1.5"/>
+  </g>
+  <circle cx="1495" cy="422" r="6" fill="#06b6d4"/>
+  <text x="1515" y="428" fill="#0f172a" font-size="20" font-weight="700">Proof of execution</text>
+  <text x="1495" y="460" fill="#64748b" font-size="15">Normalized logs</text>
+
+  <!-- out4: Reporting phase -->
+  <g filter="url(#cardShadow)">
+    <rect x="1470" y="220" width="280" height="95" rx="14" ry="14" fill="#ffffff" stroke="#fecdd3" stroke-width="1.5"/>
+  </g>
+  <circle cx="1495" cy="252" r="6" fill="#e11d48"/>
+  <text x="1515" y="258" fill="#0f172a" font-size="20" font-weight="700">Reporting</text>
+  <text x="1495" y="290" fill="#64748b" font-size="15">Retro analysis</text>
+</svg>

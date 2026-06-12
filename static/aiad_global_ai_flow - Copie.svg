@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 820" font-family="Helvetica, Arial, sans-serif" role="img" aria-label="AIAD Global AI Flow diagram">
+  <title>AIAD — AI Assisted Development — Global AI Flow</title>
+  <defs>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="gFuchsia" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e879f9"/>
+      <stop offset="100%" stop-color="#86198f"/>
+    </linearGradient>
+    <linearGradient id="gEmerald" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowLight" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e5e7eb"/>
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1800" height="820" fill="#0b1325"/>
+
+  <!-- title -->
+  <text x="70" y="85" fill="#f8fafc" font-size="50" font-weight="700">AIAD — AI Assisted Development</text>
+
+  <!-- column labels -->
+  <text x="85"   y="170" fill="#94a3b8" font-size="18" font-weight="700" letter-spacing="2">KNOWLEDGE BASE</text>
+  <text x="595"  y="170" fill="#94a3b8" font-size="18" font-weight="700" letter-spacing="2">FEATURES (PER STREAM)</text>
+  <text x="1090" y="170" fill="#94a3b8" font-size="18" font-weight="700" letter-spacing="2">GENERATED OUTPUTS</text>
+  <text x="1460" y="170" fill="#94a3b8" font-size="18" font-weight="700" letter-spacing="2">REINJECTION</text>
+
+  <!-- column separators -->
+  <line x1="460"  y1="185" x2="460"  y2="790" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <line x1="1020" y1="185" x2="1020" y2="790" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  <line x1="1430" y1="185" x2="1430" y2="790" stroke="#334155" stroke-width="1" opacity="0.5"/>
+
+  <!-- ============== edges (drawn before boxes so boxes overlap) ============== -->
+  <!-- e1: src1 -> ai1 -->
+  <path d="M390,268 L580,268" fill="none" stroke="#e5e7eb" stroke-width="3" opacity="0.9" marker-end="url(#arrowLight)"/>
+  <!-- e3: src2 -> ai2 -->
+  <path d="M390,413 L580,413" fill="none" stroke="#e5e7eb" stroke-width="3" opacity="0.9" marker-end="url(#arrowLight)"/>
+  <!-- e4: src3 right -> ai2 bottom (entryX=0.25) -->
+  <path d="M390,558 L660,558 L660,470" fill="none" stroke="#e5e7eb" stroke-width="3" opacity="0.9" marker-end="url(#arrowLight)"/>
+  <!-- e5: src4 right -> ai2 bottom (entryX=0.457) -->
+  <path d="M390,703 L726,703 L726,470" fill="none" stroke="#e5e7eb" stroke-width="3" opacity="0.9" marker-end="url(#arrowLight)"/>
+  <!-- e6: ai1 -> out1 -->
+  <path d="M900,268 L1065,268" fill="none" stroke="#34d399" stroke-width="4" marker-end="url(#arrowEmerald)"/>
+  <!-- e7: ai2 -> out2 -->
+  <path d="M900,413 L1065,413" fill="none" stroke="#34d399" stroke-width="4" marker-end="url(#arrowEmerald)"/>
+  <!-- e8: out2 -> out3 -->
+  <path d="M1395,413 L1435,413" fill="none" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrowCyan)"/>
+  <!-- dashed: out2 -> out1 -->
+  <path d="M1235,355 L1235,325" fill="none" stroke="#34d399" stroke-width="4" stroke-dasharray="8 6" marker-end="url(#arrowEmerald)"/>
+  <!-- out1 -> out4 -->
+  <path d="M1395,268 L1435,268" fill="none" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrowCyan)"/>
+
+  <!-- ============== rectangles (uniform 320 x 115) ============== -->
+  <!-- src1: Business specs -->
+  <g filter="url(#shadow)">
+    <rect x="75" y="210" width="320" height="115" rx="22" ry="22" fill="url(#gIndigo)"/>
+  </g>
+  <text x="97" y="248" fill="#ffffff" font-size="24" font-weight="700">Business specs</text>
+  <text x="97" y="278" fill="#ffffff" font-size="18">business-specs.md</text>
+  <text x="97" y="302" fill="#ffffff" font-size="16" opacity="0.85">Functional intent • rules</text>
+
+  <!-- src2: Global Architecture specification -->
+  <g filter="url(#shadow)">
+    <rect x="75" y="355" width="320" height="115" rx="22" ry="22" fill="url(#gViolet)"/>
+  </g>
+  <text x="97" y="392" fill="#ffffff" font-size="22" font-weight="700">Global Architecture specification</text>
+  <text x="97" y="421" fill="#ffffff" font-size="18">architecture.md + PUML</text>
+  <text x="97" y="445" fill="#ffffff" font-size="16" opacity="0.85">Structure • contracts</text>
+
+  <!-- src3: Coding norms -->
+  <g filter="url(#shadow)">
+    <rect x="75" y="500" width="320" height="115" rx="22" ry="22" fill="url(#gTeal)"/>
+  </g>
+  <text x="97" y="538" fill="#ffffff" font-size="24" font-weight="700">Coding norms</text>
+  <text x="97" y="568" fill="#ffffff" font-size="18">Best practice</text>
+  <text x="97" y="592" fill="#ffffff" font-size="16" opacity="0.85">Style • maintainability</text>
+
+  <!-- src4: Integration tests definition -->
+  <g filter="url(#shadow)" opacity="0.92">
+    <rect x="75" y="645" width="320" height="115" rx="22" ry="22" fill="url(#gSky)"/>
+  </g>
+  <text x="97" y="683" fill="#ffffff" font-size="24" font-weight="700">Integration tests definition</text>
+  <text x="97" y="713" fill="#ffffff" font-size="18">structured .md files</text>
+  <text x="97" y="737" fill="#ffffff" font-size="16" opacity="0.85">Expected behavior</text>
+
+  <!-- ai1: Business Feature -->
+  <g filter="url(#shadow)">
+    <rect x="580" y="210" width="320" height="115" rx="22" ry="22" fill="url(#gAmber)"/>
+  </g>
+  <text x="602" y="258" fill="#ffffff" font-size="24" font-weight="700">Business Feature</text>
+  <text x="602" y="290" fill="#ffffff" font-size="18">FXYZ-description.md</text>
+
+  <!-- ai2: Integration tests -->
+  <g filter="url(#shadow)">
+    <rect x="580" y="355" width="320" height="115" rx="22" ry="22" fill="url(#gFuchsia)"/>
+  </g>
+  <text x="602" y="403" fill="#ffffff" font-size="24" font-weight="700">Integration tests</text>
+  <text x="602" y="435" fill="#ffffff" font-size="18">FXYZ.integration.md</text>
+
+  <!-- out1: Artefacts -->
+  <g filter="url(#shadow)">
+    <rect x="1075" y="210" width="320" height="115" rx="22" ry="22" fill="url(#gEmerald)"/>
+  </g>
+  <text x="1097" y="248" fill="#ffffff" font-size="24" font-weight="700">Artefacts</text>
+  <text x="1097" y="278" fill="#ffffff" font-size="18">Code API • Web UI</text>
+  <text x="1097" y="302" fill="#ffffff" font-size="16" opacity="0.85">Governed generation</text>
+
+  <!-- out2: Integration tests (executable) -->
+  <g filter="url(#shadow)" opacity="0.92">
+    <rect x="1075" y="355" width="320" height="115" rx="22" ry="22" fill="url(#gEmerald)"/>
+  </g>
+  <text x="1097" y="393" fill="#ffffff" font-size="24" font-weight="700">Integration tests</text>
+  <text x="1097" y="423" fill="#ffffff" font-size="18">Executable IT</text>
+  <text x="1097" y="447" fill="#ffffff" font-size="16" opacity="0.85">From IT definitions</text>
+
+  <!-- out3: Proof of execution -->
+  <g filter="url(#shadow)">
+    <rect x="1445" y="355" width="320" height="115" rx="22" ry="22" fill="url(#gCyan)"/>
+  </g>
+  <text x="1467" y="393" fill="#ffffff" font-size="24" font-weight="700">Proof of execution</text>
+  <text x="1467" y="423" fill="#ffffff" font-size="18">Normalized logs</text>
+  <text x="1467" y="447" fill="#ffffff" font-size="16" opacity="0.85">Evidence of IT runs</text>
+
+  <!-- out4: Reporting phase -->
+  <g filter="url(#shadow)">
+    <rect x="1445" y="210" width="320" height="115" rx="22" ry="22" fill="url(#gRose)"/>
+  </g>
+  <text x="1467" y="248" fill="#ffffff" font-size="24" font-weight="700">Reporting phase</text>
+  <text x="1467" y="278" fill="#ffffff" font-size="18">Retro analysis</text>
+  <text x="1467" y="302" fill="#ffffff" font-size="16" opacity="0.85">Drift • coverage • gaps</text>
+</svg>

@@ -1,0 +1,20 @@
+[package]
+name = "aiad-site"
+version = "0.1.0"
+edition = "2021"
+description = "AIAD — AI Assisted Development commercial website (Axum static server)"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["fs", "trace", "compression-gzip", "set-header"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
