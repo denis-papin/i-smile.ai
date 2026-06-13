@@ -28,7 +28,10 @@ jspm_packages/
 
 # Build / compiled output
 dist/
-build/
+# NOTE: this is a Rust project — compiled output lives in target/ (ignored
+# above). The repo-tracked build/ folder holds the Docker packaging files, so
+# we do NOT ignore it wholesale; we only ignore clones the helper script makes.
+build/i-smile.ai/
 out/
 lib/
 *.tsbuildinfo

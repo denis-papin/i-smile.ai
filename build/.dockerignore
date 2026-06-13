@@ -1,0 +1,12 @@
+# Keep the build context small and the cache stable.
+# NOTE: docker reads the .dockerignore next to the build context root, so the
+# real one used at build time is a copy placed at the repo root by the helper
+# script (build_and_run.py). This file is the source of truth for that copy.
+target/
+.git/
+.gitignore
+_ai/
+README.md
+build/
+**/*.swp
+**/.DS_Store
