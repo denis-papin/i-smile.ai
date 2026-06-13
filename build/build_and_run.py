@@ -36,8 +36,8 @@ import sys
 DEFAULT_REPO = "https://github.com/denis-papin/i-smile.ai.git"
 DEFAULT_BRANCH = "main"
 DEFAULT_WORKDIR = "i-smile.ai"      # local clone directory
-DEFAULT_IMAGE = "aiad-site:latest"
-DEFAULT_CONTAINER = "aiad-site"
+DEFAULT_IMAGE = "i-smile.ai:latest"
+DEFAULT_CONTAINER = "i-smile.ai"
 DEFAULT_PORT = 3000                 # host port -> container 3000
 
 

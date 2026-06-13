@@ -9,7 +9,7 @@
 # Build context is the REPOSITORY ROOT (so Cargo.toml, src/ and static/ are
 # reachable). From the repo root:
 #
-#   docker build -f build/Dockerfile -t aiad-site:latest .
+#   docker build -f build/Dockerfile -t i-smile.ai:latest .
 #
 # ---------------------------------------------------------------------------
 # ---- builder ----

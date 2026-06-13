@@ -25,8 +25,8 @@ Then open <http://localhost:3000/>.
 From the **repository root** (not from inside `build/`):
 
 ```bash
-docker build -f build/Dockerfile -t aiad-site:latest .
-docker run -d --name aiad-site -p 3000:3000 aiad-site:latest
+docker build -f build/Dockerfile -t i-smile.ai:latest .
+docker run -d --name i-smile.ai -p 3000:3000 i-smile.ai:latest
 ```
 
 ## Helper script options
