@@ -86,13 +86,13 @@
   <path d="M390,435 L600,435" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
     <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.9s" repeatCount="indefinite"/>
   </path>
-  <!-- e4: src3 right -> ai2 bottom (enters at 25% from left) -->
-  <path d="M390,605 L670,605 L670,485" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
-    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.1s" repeatCount="indefinite"/>
+  <!-- e4: src3 (Coding norms) -> out1 (Artefacts) — bypasses AI engine, routed through the amber/mint gap -->
+  <path d="M390,605 L940,605 L940,290 L1040,290" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.4s" repeatCount="indefinite"/>
   </path>
-  <!-- e5: src4 right -> ai2 bottom (enters at ~46% from left) -->
-  <path d="M390,775 L728,775 L728,485" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
-    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.3s" repeatCount="indefinite"/>
+  <!-- e5: src4 (Integration tests def) -> out2 (Integration tests, executable) — bypasses AI engine -->
+  <path d="M390,775 L980,775 L980,460 L1040,460" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="10 6" marker-end="url(#arrowSlate)">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.6s" repeatCount="indefinite"/>
   </path>
   <!-- e6: ai1 -> out1 -->
   <path d="M880,265 L1040,265" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="10 6" marker-end="url(#arrowEmerald)">
