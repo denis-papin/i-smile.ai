@@ -22,13 +22,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl ca-certificates build-essential pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Install a pinned Rust toolchain. Some transitive deps (async-compression,
-# compression-codecs) require rustc >= 1.83, so pin a comfortably recent stable.
+# Install the latest stable Rust toolchain (some transitive deps, e.g.
+# async-compression / compression-codecs, require a recent rustc).
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
-        | sh -s -- -y --default-toolchain 1.85.0 --profile minimal
+        | sh -s -- -y --default-toolchain stable --profile minimal
 
 WORKDIR /app
 
