@@ -37,7 +37,7 @@ strict engineering discipline.** That is rare, credible, and high-value.
 - **PL/SQL optimization:** reduced an Oracle batch routine **from 12h to 4h30**. *(CACEIS / Crédit Agricole)*
 - **Domains of trust:** private banking (KBL, CACEIS, SGAM, CNCE), aviation (GlobalJet), life insurance (Silverlake), public sector (Luxembourg Chamber of Deputies, BC Ministry of Forests, UGAP).
 - **Modern stack delivered in 2022–2026:** Java 17–21, Spring Boot microservices, OpenAPI 3.0, Vue.js, Rancher.
-- **Flagship project — Klyrio:** a full product designed and built entirely in **Rust** using the **AIAD methodology**, end to end — live proof the method ships production-grade software. Overview: [i-smile.one/int](https://i-smile.one/int/) · **live demo app:** [i-smile.one/int/app](https://i-smile.one/int/app) (prospects can test it themselves).
+- **Flagship project — Klyrio:** a full product designed and built entirely in **Rust** using the **AIAD methodology**, end to end — live proof the method ships production-grade software. Overview: [i-smile.one/int](https://i-smile.one/int/) · **live demo app:** [i-smile.one/int/app/login](https://i-smile.one/int/app/login) (prospects can test it themselves).
 - **Languages:** French (native), English (fluent) → ready for international clients.
 
 ---
