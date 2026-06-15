@@ -37,7 +37,7 @@ strict engineering discipline.** That is rare, credible, and high-value.
 - **PL/SQL optimization:** reduced an Oracle batch routine **from 12h to 4h30**. *(CACEIS / Crédit Agricole)*
 - **Domains of trust:** private banking (KBL, CACEIS, SGAM, CNCE), aviation (GlobalJet), life insurance (Silverlake), public sector (Luxembourg Chamber of Deputies, BC Ministry of Forests, UGAP).
 - **Modern stack delivered in 2022–2026:** Java 17–21, Spring Boot microservices, OpenAPI 3.0, Vue.js, Rancher.
-- **Open source:** [github.com/doka-one/doka.one](https://github.com/doka-one/doka.one).
+- **Flagship project — Klyrio:** a full product designed and built entirely in **Rust** using the **AIAD methodology**, end to end — live proof the method ships production-grade software: [i-smile.one/int](https://i-smile.one/int/).
 - **Languages:** French (native), English (fluent) → ready for international clients.
 
 ---
@@ -137,7 +137,7 @@ Ranked by expected ROI for a solo senior consultant. Work the top of the list fi
 - **Upwork** only for premium/long-term — filter hard, it skews price-competitive.
 
 ### Tier 3 — Communities & content (inbound over time)
-- **GitHub** — keep doka.one active; pin the migration tooling; READMEs sell.
+- **Klyrio ([i-smile.one/int](https://i-smile.one/int/))** — your flagship Rust + AIAD product; keep it visible as living proof of the method; case studies and demos sell.
 - **Dev communities:** Hacker News (Show HN / case studies), Lobsters, r/rust, r/java,
   r/golang, Rust/Go/Java Discords & Slacks, **Reddit r/ExperiencedDevs**.
 - **Conferences & meetups:** Devoxx, JNation, GOTO, QCon, RustConf, GopherCon,
