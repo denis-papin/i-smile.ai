@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Discovery Call | i-smile AIAD</title>
+  <meta name="description" content="Book a free 30-minute discovery call to discuss your legacy modernization, knowledge reconstruction or AI-assisted development needs." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">i</span>
+        <span class="nav__logo-text">i-smile<span class="nav__logo-sub">AIAD methodology</span></span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#approach">Methodology</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="index.html#humanizer">Humanizer Phase</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary nav__cta">Book a call</a>
+      <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="badge">Contact</span>
+      <h1>Let's modernize it <span class="grad">— together.</span></h1>
+      <p class="page-hero__lead">
+        Tell me a little about your system and your goals. I'll reply personally to set up a free 30-minute discovery call — no obligation, no sales script.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h3>What to expect</h3>
+        <p>A direct conversation with a senior engineer — not an account manager. In 30 minutes we'll cover your system, your risks, and the most sensible first step.</p>
+        <ul>
+          <li><strong>Email</strong> hello@i-smile.ai</li>
+          <li><strong>Based in</strong> France · working with clients across the EU &amp; internationally (remote)</li>
+          <li><strong>Languages</strong> French (native), English (fluent)</li>
+          <li><strong>Featured project</strong> <a href="https://i-smile.one/int/" target="_blank" rel="noopener" style="color:var(--brand);">Klyrio — built entirely in Rust with AIAD</a> · <a href="https://i-smile.one/int/app" target="_blank" rel="noopener" style="color:var(--brand);">try the live app →</a></li>
+        </ul>
+        <p style="margin-top:24px; color:var(--text-dim);">
+          Good first messages mention: the tech stack, roughly how old the system is, and what's driving the change (performance, risk, people leaving, cloud, audit…).
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Request a discovery call</h3>
+        <form class="cta__form" id="contactForm" novalidate>
+          <div>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div>
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div>
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company name" required />
+          </div>
+          <div>
+            <label for="message">What would you like to modernize?</label>
+            <textarea id="message" name="message" placeholder="Stack, system age, and what's driving the change…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">Send &amp; request a call</button>
+          <p class="cta__feedback" id="formFeedback" role="status"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="nav__logo"><span class="nav__logo-mark">i</span><span class="nav__logo-text">i-smile</span></div>
+        <p class="footer__tag">Disciplined AI-assisted engineering — the AIAD methodology. By Denis Crespe.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h5>Services</h5>
+          <a href="services.html">Legacy migration</a>
+          <a href="services.html">Knowledge reconstruction</a>
+          <a href="services.html">AIAD enablement</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About Denis</a>
+          <a href="index.html#humanizer">Humanizer Phase</a>
+        </div>
+        <div>
+          <h5>Get in touch</h5>
+          <a href="contact.html">Book a discovery call</a>
+          <a href="https://i-smile.one/int/" target="_blank" rel="noopener">Klyrio (built in Rust)</a>
+          <a href="https://i-smile.one/int/app" target="_blank" rel="noopener">Try Klyrio live →</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> i-smile — AIAD. Built for real engineering.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
